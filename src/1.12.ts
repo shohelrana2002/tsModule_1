@@ -23,5 +23,12 @@
       console.log("Wrong Input");
     }
   };
-  getSpeedMeterPerSecond("dhfdgshgds");
+  getSpeedMeterPerSecond(null);
+
+  /// never error dib_e just
+
+  const trowError = (err: string): never => {
+    throw new Error(err);
+  };
+  trowError("Tui error Volo hsbi ns");
 }
